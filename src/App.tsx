@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import * as C from './App.styles';
-import { Category } from "./types/Category";
 import { Item } from "./types/Items";
 
 import { categories } from "./data/categories";
