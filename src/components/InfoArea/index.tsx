@@ -28,9 +28,9 @@ export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props
     return (
         <C.Container>
             <C.MonthArea>
-                <C.MonthArrow onClick={handlePrevMonth}>⬅</C.MonthArrow>
+                <C.MonthArrow onClick={handlePrevMonth}>&#60;</C.MonthArrow>
                 <C.MonthTitle>{formatCurrentMonth(currentMonth)}</C.MonthTitle>
-                <C.MonthArrow onClick={handleNextMonth}>➡</C.MonthArrow>
+                <C.MonthArrow onClick={handleNextMonth}>&#62;</C.MonthArrow>
             </C.MonthArea>
             <C.ResumeArea>
                 <ResumeItem  title="Receitas" value={income} />
@@ -38,7 +38,7 @@ export const InfoArea = ({ currentMonth, onMonthChange, income, expense }: Props
                 <ResumeItem  
                     title="Balanço" 
                     value={income - expense}
-                    color={(income - expense) < 0 ? 'red' : '#00FF00'} 
+                    color={(income - expense) < 0 ? '#E51A4E' : '#34DA64'} 
                 />
             </C.ResumeArea>
         </C.Container>

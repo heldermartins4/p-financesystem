@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #fff;
+  background: #272727;
   min-height: 100vh;
 `;
 
 export const Header = styled.div`
-    background: linear-gradient(45deg, #FF563C, #FFC445 ,#FF62E7);
-    height: 150px;
+    background: linear-gradient(45deg, #26156B, #302778 ,#824DA7);
+    height: 30vh;
 `;
 
 export const HeaderText = styled.h1`
-    color: #fff;
+    color: #f5f5f5;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
 `;
 
 export const Body = styled.div`
